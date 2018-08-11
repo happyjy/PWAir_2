@@ -24,7 +24,6 @@
 
 <script>
 // require('../js/auth.js');
-
 export default {
   name: 'Login',
   data () {
@@ -52,8 +51,7 @@ export default {
             console.log(error);
         }).then(function (user) {
             console.log(user);
-            debugger;
-            me.$router.push('Main')
+            me.$router.push('Main');
         });
     },
     googleLogin () {
